@@ -1,0 +1,76 @@
+/* Container for Sidebar and Settings Content */
+.container {
+  display: flex;
+  min-height: 100vh; /* Ensures the layout takes full height */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px; /* Fixed width for Sidebar */
+  background-color: #333;
+  color: white;
+  position: fixed; /* Fixed positioning for the sidebar */
+  height: 100%; /* Full height */
+  top: 0;
+  left: 0;
+}
+
+/* Settings Content */
+.settings-content {
+  margin-left: 250px; /* Ensure there's space for the sidebar */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  flex: 1; /* Ensures the settings page takes up the remaining space */
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.settings-form {
+  margin-top: 20px;
+}
+
+.settings-form .form-row {
+  margin-bottom: 15px;
+}
+
+.settings-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.settings-form input,
+.settings-form .gender-options {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Gender Options */
+.settings-form .gender-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-form .gender-options input {
+  margin-right: 10px;
+}
+
+.settings-form .form-actions {
+  text-align: center;
+}
+
+.settings-form .save-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.settings-form .save-button:hover {
+  background-color: #45a049;
+}

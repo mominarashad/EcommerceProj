@@ -1,0 +1,27 @@
+.contact-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .contact-page table th, .contact-page table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .contact-page table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,21 @@
+/* styles/Navbar.css */
+.navbar {
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .username {
+    font-size: 16px;
+  }
+  
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  

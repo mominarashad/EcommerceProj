@@ -1,0 +1,184 @@
+/* SignIn Page Styling */
+
+/* Container for the entire sign-in form */
+.signin-containers {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #66785F; /* Outside color */
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Form container */
+.form-containers {
+  background: #fff;
+  padding: 60px; /* Increased padding for height */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Increased maximum width */
+  width: 100%;
+  animation: slideUp 0.5s ease-out;
+  border: 1px solid #ddd;
+}
+
+/* Header and description text */
+.signin-section h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.signin-section p {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 30px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  color: #aaa; /* Lighter color for the label */
+  display: block;
+  margin-bottom: 5px; /* Space between label and input */
+  text-align: left; /* Align label to the left */
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #66785F;
+  outline: none;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Button styling */
+button {
+  padding: 12px 20px;
+  background-color: #66785F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #5a6e4f;
+}
+
+/* Error message box */
+.error p {
+  color: #e74c3c;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: fadeInError 1s ease-out;
+}
+
+/* Link for sign-up page */
+.signin-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signin-link a {
+  color: #66785F;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 25px;
+    width: 90%;
+  }
+
+  .signin-section h2 {
+    font-size: 24px;
+  }
+
+  .signin-section p {
+    font-size: 12px;
+  }
+
+  .form-control {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInError {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

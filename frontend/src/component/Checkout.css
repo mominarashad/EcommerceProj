@@ -1,0 +1,117 @@
+/* Container Styling */
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .checkout-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    animation: slideInDown 1s ease-in-out;
+  }
+  
+  /* Form Styling */
+  .checkout-form {
+    width: 100%;
+    max-width: 500px;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  input:focus {
+    border: 1px solid #3498db;
+  }
+  
+  /* Button Styling */
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(45deg, #1abc9c, #16a085);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(45deg, #16a085, #1abc9c);
+    transform: scale(1.05);
+  }
+  
+  .submit-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Message Styling */
+  .message {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .success {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .error {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
